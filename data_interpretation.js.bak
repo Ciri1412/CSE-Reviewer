@@ -1,0 +1,45 @@
+const questionsDatabase = {
+  bank: {
+    "Analytical Ability": {
+      easy: [
+        {
+          type: "group",
+          instruction:
+            "For questions 1 to 3, refer to the bar graph titled 'Monthly Passenger Volume of MRT-3' and answer the questions that follow.",
+          referenceImage: "./src/images/mrt3_passenger_volume.png", // Make sure this path matches your folder structure!
+          questions: [
+            {
+              subject: "Analytical Ability",
+              text: "DATA INTERPRETATION: Based on the graph, which month recorded the highest passenger volume?",
+              choices: ["January", "February", "March", "April"],
+              correctAnswer: 2,
+              hint: "Look for the tallest bar on the chart.",
+              explanation:
+                "The bar for March reaches the 15 million mark, which is visually the highest peak on the graph compared to the other months.",
+            },
+            {
+              subject: "Analytical Ability",
+              text: "DATA INTERPRETATION: What was the recorded passenger volume for the month of February?",
+              choices: ["10 million", "12 million", "14 million", "15 million"],
+              correctAnswer: 1,
+              hint: "Find the label for February on the X-axis and trace its height to the Y-axis.",
+              explanation:
+                "Tracing the top of the bar for February horizontally to the Y-axis aligns exactly with the 12 million mark.",
+            },
+            {
+              subject: "Analytical Ability",
+              text: "DATA INTERPRETATION: How many more passengers rode the MRT-3 in March compared to January?",
+              choices: ["2 million", "3 million", "4 million", "5 million"],
+              correctAnswer: 3,
+              hint: "Subtract the value of January from the value of March.",
+              explanation:
+                "March had a volume of 15 million passengers, while January had 10 million. The difference is 15 - 10 = 5 million passengers.",
+            },
+          ],
+        },
+      ],
+      medium: [],
+      hard: [],
+    },
+  },
+};
